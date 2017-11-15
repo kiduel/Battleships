@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <battleships.game.project.battleships.ui.Board
+        android:layout_alignParentBottom="true"
+
+        android:id="@+id/opponent_board"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_above="@id/opponent_board"
+        android:id="@+id/status_textView"
+
+        android:text="Welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:hint="Enter magic word"
+        android:layout_above="@id/status_textView"
+        android:id="@+id/magic_word_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/new_game_button"
+        android:layout_above="@id/status_textView"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:textAllCaps="false"
+        android:text=" new game"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/play_button"
+        android:textAllCaps="false"
+        android:text="play"
+        android:layout_alignParentRight="true"
+        android:layout_above="@id/new_game_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <battleships.game.project.battleships.ui.Board
+        android:layout_alignParentTop="true"
+        android:id="@+id/player_board"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>
